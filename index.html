@@ -1,102 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-      .container {
-        width: 960px;
-      }
-      p.lead {
-        padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
-        text-align: center;
-      }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
-        </div>
-      </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div> 
-     <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
-          </div>
-          <div class="order">
-            Order
-          </div>
-          <div class="social">
-            Social
+<head>
+  <meta charset="utf-8">
+  <title>My First Bitstarter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/application.css" rel="stylesheet">
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+    <a class="navbar-brand" href="/">Bitstarter</a>
+    <div class="nav-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Visualize your visitors</h1>
+    <p>Track your website visitors, where they click, scroll, and even pay attention.</p>
+  </div>
+
+  <div class="row pitch">
+    <div class="col-lg-5 text-center">
+      <img class="img-thumbnail" src="http://placehold.it/480x300">
+    </div>
+
+    <div class="col-lg-6 col-offset-1 actions">
+      <div class="row">
+        <div class="col-lg-8 col-offset-2">
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <h3>1,000</h3>
+              <p>backers</p>
+            </div>
+            <div class="col-lg-4">
+              <h3>$6,000</h3>
+              <p>of $10,000</p>
+            </div>
+            <div class="col-lg-4">
+              <h3>10</h3>
+              <p>days left</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="thermometer progress active">
+            <div class="progress-bar progress-bar-success" style="width: 60%;"></div>
+            <div class="progress-bar progress-bar-warning" style="width: 40%;"></div>
+          </div>
         </div>
       </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
-        </div>
+
+      <div class="order text-center">
+        <button class="btn btn-success btn-large">Preorder</button>
       </div>
-      <div class="row faq">
-        <div class="span12">
-          FAQ
-        </div>
+
+      <div class="social text-center">
+        <a href="#" class="btn btn-info">Twitter</a>
+        <a href="#" class="btn btn-primary">Facebook</a>
       </div>
-      <div class="row footer">
-        <div class="span12">
-          Footer
+    </div>
+  </div>
+
+  <div id="features">
+    <div class="row">
+      <div class="col-lg-6 col-offset-1 col-push-5">
+        <h2>Mouse tracking</h2>
+        <p>
+          Watch recordings about how your visitors using your website. Every mouse movements, clicks, and form fills, like you watching them over their shoulders. We want to show you the full story.
+        </p>
+
+        <h2>Optimization</h2>
+        <p>
+          If you know, what your visitors are doing, you can make better decisions faster. Want to know where to put that "Order" button, or if the ad at the right side gets enough attention? Now it's possible with only a few clicks.
+        </p>
+
+        <h2>Customer-centric</h2>
+        <p>
+          Have you ever got an error report, and didn't know how to reproduce it? Now you just have to watch the recording from your visitor's session, and you'll know how she got there, and what to do about it.
+        </p>
+      </div>
+      <div class="col-lg-5 col-pull-7 text-center">
+        <div class="row">
+          <div class="col-lg-8">
+            <img class="img-thumbnail" src="http://placehold.it/480x300">
+          </div>
+        </div>
+        <div class="row hidden-sm">
+          <div class="col-lg-8 col-offset-4">
+            <img class="img-thumbnail" src="http://placehold.it/480x300">
+          </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Click heatmaps</h2>
+        <p>
+          Click is the most important action on your website. Find out where your visitors click and don't click, so you can make better decisions to maximize conversion.
+        </p>
+
+        <h2>Scroll heatmaps</h2>
+        <p>
+          Find out how many visitor actually make it to the middle or bottom of the page. Is your "Order" button in the right place? Learn where to put the most important content on your website.
+        </p>
+
+        <h2>Real-time analytics</h2>
+        <p>
+          Want to see how many visitors are currently on your website? Want to know how they found you? We show you this and much more on your dashboard.
+        </p>
+      </div>
+      <div class="col-lg-5 col-offset-1 text-center">
+        <div class="row">
+          <div class="col-lg-8 col-offset-4">
+            <img class="img-thumbnail" src="http://placehold.it/480x300">
+          </div>
+        </div>
+        <div class="row hidden-sm">
+          <div class="col-lg-8">
+            <img class="img-thumbnail" src="http://placehold.it/480x300">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-10">
+      <h2>FAQ</h2>
+      <h3>How does this work?</h3>
+      <p>
+        We give you a little piece of javascript code to paste in your website. After that the monitoring starts automatically. It only takes a few minutes.
+      </p>
+
+      <h3>Will it slow down my website?</h3>
+      <p>
+        No, not at all. We designed our javascript code to be as unobtrusive as possible.
+      </p>
+    </div>
+  </div>
+</div>
+</body>
 </html>
